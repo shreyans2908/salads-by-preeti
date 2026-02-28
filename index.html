@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salads by Preeti — Freshly Grown, Freshly Served</title>
+    <meta name="description"
+        content="Order handcrafted salads made with freshly grown vegetables from Salads by Preeti. Farm-fresh ingredients, vibrant flavors, delivered to your door.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🥗</span>
+                <span class="logo-text">Salads <em>by</em> Preeti</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#menu" class="nav-cta" id="nav-order-btn">Order Now</a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">🌿 Farm Fresh • Handcrafted</span>
+                <h1 class="hero-title">
+                    Nourish Your Body with
+                    <span class="highlight">Nature's Best</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Handcrafted salads made with freshly grown vegetables from our garden to your table. Every bite is a
+                    celebration of freshness.
+                </p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary" id="hero-explore-btn">
+                        Explore Menu
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn btn-ghost" id="hero-learn-btn">
+                        Our Story
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Fresh Ingredients</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">Zero</span>
+                        <span class="stat-label">Preservatives</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-glow"></div>
+                    <img src="images/salad-1.jpg" alt="Fresh garden salad bowl" class="hero-image" />
+                    <div class="floating-tag tag-1">🥬 Farm Fresh</div>
+                    <div class="floating-tag tag-2">✨ Handmade</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Our Menu</span>
+                <h2 class="section-title">Signature Salad Bowls</h2>
+                <p class="section-subtitle">Each bowl is a masterpiece — bursting with colors, textures, and nutrients
+                    from freshly grown vegetables.</p>
+            </div>
+            <div class="salad-grid">
+                <!-- Salad Card 1 -->
+                <div class="salad-card" id="salad-card-1">
+                    <div class="card-image-wrapper">
+                        <img src="images/salad-1.jpeg" alt="Rainbow Garden Bowl" class="card-image" />
+                        <div class="card-badge">Bestseller</div>
+                        <div class="card-overlay">
+                            <button class="quick-view-btn" onclick="openModal(1)">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Rainbow Garden Bowl</h3>
+                            <span class="card-price">₹349</span>
+                        </div>
+                        <p class="card-description">
+                            A vibrant medley of bell peppers, fresh greens, tofu, couscous, and our signature herb pesto
+                            dip. A feast for your eyes and soul.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">🌶 Bell Peppers</span>
+                            <span class="tag">🧀 Tofu</span>
+                            <span class="tag">🌿 Pesto</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-nutrition">
+                                <span>🔥 320 cal</span>
+                                <span>⏱ 10 min</span>
+                            </div>
+                            <button class="add-to-cart-btn" id="add-btn-1" onclick="addToCart(1)">
+                                <span class="btn-text">Add to Cart</span>
+                                <span class="btn-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salad Card 2 -->
+                <div class="salad-card" id="salad-card-2">
+                    <div class="card-image-wrapper">
+                        <img src="images/salad-2.jpeg" alt="Green Goddess Bowl" class="card-image" />
+                        <div class="card-badge badge-new">New</div>
+                        <div class="card-overlay">
+                            <button class="quick-view-btn" onclick="openModal(2)">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Green Goddess Bowl</h3>
+                            <span class="card-price">₹299</span>
+                        </div>
+                        <p class="card-description">
+                            Fresh avocado, green peas, spinach, buckwheat, cherry tomatoes, and a tangy berry
+                            vinaigrette. Pure green goodness.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">🥑 Avocado</span>
+                            <span class="tag">🫛 Green Peas</span>
+                            <span class="tag">🫐 Berry Dressing</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-nutrition">
+                                <span>🔥 280 cal</span>
+                                <span>⏱ 8 min</span>
+                            </div>
+                            <button class="add-to-cart-btn" id="add-btn-2" onclick="addToCart(2)">
+                                <span class="btn-text">Add to Cart</span>
+                                <span class="btn-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salad Card 3 -->
+                <div class="salad-card" id="salad-card-3">
+                    <div class="card-image-wrapper">
+                        <img src="images/salad-3.jpeg" alt="Protein Power Bowl" class="card-image" />
+                        <div class="card-badge badge-vegan">Vegan</div>
+                        <div class="card-overlay">
+                            <button class="quick-view-btn" onclick="openModal(3)">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Protein Power Bowl</h3>
+                            <span class="card-price">₹329</span>
+                        </div>
+                        <p class="card-description">
+                            Hearty lentils, chickpeas, pomegranate seeds, cucumber, and mixed greens with pesto
+                            dressing. Protein-packed perfection.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">🫘 Lentils</span>
+                            <span class="tag">🥒 Cucumber</span>
+                            <span class="tag">💎 Pomegranate</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-nutrition">
+                                <span>🔥 350 cal</span>
+                                <span>⏱ 12 min</span>
+                            </div>
+                            <button class="add-to-cart-btn" id="add-btn-3" onclick="addToCart(3)">
+                                <span class="btn-text">Add to Cart</span>
+                                <span class="btn-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">From Our Garden to Your Bowl</h2>
+                <p class="section-subtitle">We grow our vegetables with love and care, ensuring every ingredient is at
+                    its freshest and most nutritious.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" id="feature-1">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Freshly Grown</h3>
+                    <p>All vegetables are grown in our own garden — no middlemen, no storage, just farm-to-table
+                        freshness.</p>
+                </div>
+                <div class="feature-card" id="feature-2">
+                    <div class="feature-icon">🧑‍🍳</div>
+                    <h3>Handcrafted Daily</h3>
+                    <p>Every salad is made with care by Preeti herself, ensuring consistent quality and taste in every
+                        bowl.</p>
+                </div>
+                <div class="feature-card" id="feature-3">
+                    <div class="feature-icon">🚫</div>
+                    <h3>Zero Preservatives</h3>
+                    <p>No artificial colors, no preservatives, no shortcuts. Just pure, wholesome, natural goodness.</p>
+                </div>
+                <div class="feature-card" id="feature-4">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Freshly prepared and delivered to your doorstep within minutes. Because fresh salads shouldn't
+                        wait.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" id="testimonial-1">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The freshest salads I've ever had! You can literally taste the
+                        difference. The Rainbow Garden Bowl is absolutely divine."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div>
+                            <strong>Ananya S.</strong>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" id="testimonial-2">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Preeti's salads have changed my relationship with healthy eating. The
+                        flavors are incredible and the portions are so generous!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div>
+                            <strong>Rahul M.</strong>
+                            <span>Health Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" id="testimonial-3">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I order the Protein Power Bowl every week. It's my go-to post-workout
+                        meal. Fresh, filling, and absolutely delicious!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div>
+                            <strong>Priya K.</strong>
+                            <span>Fitness Coach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to taste the freshness?</h2>
+                <p class="cta-subtitle">Order your handcrafted salad bowl today and experience the garden-to-table
+                    difference.</p>
+                <div class="cta-actions">
+                    <a href="#menu" class="btn btn-primary btn-large" id="cta-order-btn">Order Now</a>
+                    <a href="https://wa.me/916377836802" class="btn btn-outline btn-large" id="cta-whatsapp-btn"
+                        target="_blank" rel="noopener">
+                        💬 WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <span class="logo">
+                        <span class="logo-icon">🥗</span>
+                        <span class="logo-text">Salads <em>by</em> Preeti</span>
+                    </span>
+                    <p>Handcrafted salads with freshly grown vegetables. From our garden to your bowl, every day.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Salads by Preeti. Made with 💚 and fresh greens.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" id="cart-close-btn" onclick="closeCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="cart-empty" id="cart-empty">
+                <span class="cart-empty-icon">🥗</span>
+                <p>Your cart is empty</p>
+                <span>Add some delicious salads!</span>
+            </div>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display:none;">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">₹0</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn" onclick="checkout()">
+                Place Order via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Cart Button -->
+    <button class="floating-cart" id="floating-cart" onclick="openCart()">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count" id="cart-count">0</span>
+    </button>
+
+    <!-- Product Modal -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal" id="product-modal">
+        <button class="modal-close" id="modal-close-btn" onclick="closeModal()">✕</button>
+        <div class="modal-body">
+            <div class="modal-image-wrapper">
+                <img src="" alt="" class="modal-image" id="modal-image" />
+            </div>
+            <div class="modal-content">
+                <span class="modal-badge" id="modal-badge"></span>
+                <h2 class="modal-title" id="modal-title"></h2>
+                <p class="modal-description" id="modal-description"></p>
+                <div class="modal-details">
+                    <div class="modal-detail">
+                        <span class="detail-label">Calories</span>
+                        <span class="detail-value" id="modal-calories"></span>
+                    </div>
+                    <div class="modal-detail">
+                        <span class="detail-label">Prep Time</span>
+                        <span class="detail-value" id="modal-time"></span>
+                    </div>
+                    <div class="modal-detail">
+                        <span class="detail-label">Serves</span>
+                        <span class="detail-value" id="modal-serves"></span>
+                    </div>
+                </div>
+                <div class="modal-ingredients" id="modal-ingredients"></div>
+                <div class="modal-footer">
+                    <span class="modal-price" id="modal-price"></span>
+                    <button class="btn btn-primary" id="modal-add-btn" onclick="addToCartFromModal()">Add to
+                        Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
