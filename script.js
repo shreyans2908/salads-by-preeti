@@ -190,7 +190,7 @@ function closeCart() {
 function checkout() {
     if (cart.length === 0) return;
 
-    let message = '🥗 *New Order from Salads by Preeti*\n\n';
+    let message = '🥗 *New Order from Saatvik Salads*\n\n';
     cart.forEach(item => {
         message += `• ${item.name} × ${item.qty} — ₹${item.price * item.qty}\n`;
     });
